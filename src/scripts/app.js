@@ -92,6 +92,24 @@ const updateTotalNameCounter = (number) => {
     totalNameCounter.textContent = `Total Names: ${number}`;
 }
 
+const createGroupElement = () => {
+    modalBodyDiv.innerHTML = '';
+    
+    let groupCounter = Math.floor(groupSizeNumber / totalNameNumber);
+    console.log(groupCounter);
+    let studentCounter = Math.floor();
+
+    if (groupCounter === 0)
+        return;
+
+    for (let i = 0; i < groupCounter; i++) {
+        let h1 = document.createElement('h1');
+        h1.className = 'text-2xl';
+        h1.textContent = `Group ${i + 1}:` 
+        modalBodyDiv.append(h1);
+    }
+}
+
 const onPageLoad = () => {
     updateTotalNameCounter(totalNameNumber);
 
@@ -121,7 +139,7 @@ if (addNameBtn !== null) {
 
 if (getGroupBtn !== null) {
     getGroupBtn.addEventListener('click', () => {
-        
+        createGroupElement();
     });
 }
 
