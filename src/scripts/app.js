@@ -93,22 +93,19 @@ const updateTotalNameCounter = (number) => {
 }
 
 const createGroupElement = () => {
-    if (totalNameNumber === 0) {
-        return;
-    }
-
     modalBodyDiv.innerHTML = '';
     
-    let groupCounter = Math.floor(groupSizeNumber / totalNameNumber);
+    let groupCounter = Math.floor(totalNameNumber / groupSizeNumber);
     console.log(groupCounter);
-    let studentCounter = Math.floor();
 
+    /*
     for (let i = 0; i < groupCounter; i++) {
         let h1 = document.createElement('h1');
         h1.className = 'text-2xl';
         h1.textContent = `Group ${i + 1}:` 
         modalBodyDiv.append(h1);
     }
+    */
 }
 
 const onPageLoad = () => {
