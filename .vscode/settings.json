@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c38db750-5352-49f8-b7a6-3674757c632f/resourceGroups/CodeStackLevelTwo/providers/Microsoft.Web/sites/EnhancedRNGRandomNameGenerator",
+    "appService.deploySubpath": "src"
+}

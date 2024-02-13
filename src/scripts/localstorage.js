@@ -5,6 +5,8 @@ const saveToLocalStorage = (name) => {
         rnglist.push(name);
     }
 
+    rnglist.sort((a, b) => a - b);
+
     localStorage.setItem("RNGList", JSON.stringify(rnglist));
 }
 
