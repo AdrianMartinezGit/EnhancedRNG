@@ -93,14 +93,15 @@ const updateTotalNameCounter = (number) => {
 }
 
 const createGroupElement = () => {
+    if (totalNameNumber === 0) {
+        return;
+    }
+
     modalBodyDiv.innerHTML = '';
     
     let groupCounter = Math.floor(groupSizeNumber / totalNameNumber);
     console.log(groupCounter);
     let studentCounter = Math.floor();
-
-    if (groupCounter === 0 || totalNameNumber === 0)
-        return;
 
     for (let i = 0; i < groupCounter; i++) {
         let h1 = document.createElement('h1');
