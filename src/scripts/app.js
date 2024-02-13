@@ -99,7 +99,7 @@ const createGroupElement = () => {
     console.log(groupCounter);
     let studentCounter = Math.floor();
 
-    if (groupCounter === 0 && totalNameNumber === 0)
+    if (groupCounter === 0 || totalNameNumber === 0)
         return;
 
     for (let i = 0; i < groupCounter; i++) {
